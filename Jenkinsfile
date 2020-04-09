@@ -15,7 +15,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'echo "Bismillah"'
-                sh 'html_linter.py index.html'
+                sh 'html_lint.py index.html'
             }
         }
     }
