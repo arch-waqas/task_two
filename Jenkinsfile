@@ -14,12 +14,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
                 sh 'echo "Bismillah"'
-                sh '''
-                    echo "Multiline Command"
-                    ls -alh
-                '''
+                sh 'html_linter.py index.html'
             }
         }
     }
