@@ -14,7 +14,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'Bismillah'
+                sh 'npm --version'
+                sh 'echo "Bismillah"'
+                sh '''
+                    echo "Multiline Command"
+                    ls -alh
+                '''
             }
         }
     }
